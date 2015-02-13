@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slidingmenu_up_back"
+    android:orientation="vertical" >
+
+    <com.android.iuhelp.view.slidingmenu.SlidingMenu
+        android:id="@+id/slidingmenulayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="302dp"
+                android:background="@drawable/slidingmenu_top_back" >
+
+                <Button
+                    android:id="@+id/slidingmenu_person_informationbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/slidingmenu_top_button"
+                    android:text="资料"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/slidingmenu_person_nametext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/slidingmenu_person_informationbutton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="28dp"
+                    android:text="幻翔"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/slidingmenu_person_sexpic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/slidingmenu_person_nametext"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/slidingmenu_person_nametext"
+                    android:src="@drawable/slidingmenu_boy_pic" />
+
+                <ImageView
+                    android:id="@+id/slidingmenu_person_headpic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/slidingmenu_top_pic" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/slidingmenu_pic1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/slidingmenu_person_headpic"
+                    android:layout_below="@id/slidingmenu_person_headpic"
+                    android:layout_marginLeft="-38dp"
+                    android:src="@drawable/slidingmenu_bangdou_pic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/slidingmenu_pic1"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/slidingmenu_pic1"
+                    android:text="帮豆"
+                    android:textColor="#b0a198"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/slidingmenu_pic1"
+                    android:layout_marginBottom="-2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/slidingmenu_pic1"
+                    android:text="34"
+                    android:textColor="#b0a198"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/slidingmenu_person_headpic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:background="#b0a198" />
+
+                <ImageView
+                    android:id="@+id/slidingmenu_pic2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/slidingmenu_person_headpic"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/slidingmenu_pic1"
+                    android:src="@drawable/slidingmenu_xinyong_pic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/slidingmenu_pic2"
+                    android:layout_marginTop="-1dp"
+                    android:layout_toRightOf="@id/slidingmenu_pic2"
+                    android:text="信誉"
+                    android:textColor="#b0a198"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/slidingmenu_pic2"
+                    android:layout_marginBottom="-4dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/slidingmenu_pic2"
+                    android:text="12"
+                    android:textColor="#b0a198"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-55dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/slidingmenu_content_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6" >
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/slidingmenu_setting_pic" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:background="#b0a198" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/slidingmenu_back_pic" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.iuhelp.view.slidingmenu.SlidingMenu>
+
+</LinearLayout>

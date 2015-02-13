@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/slidingmenu_item_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/slidingmenu_item_activitypic"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/slidingmenu_item_name"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/slidingmenu_item_pic"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/slidingmenu_item_pic"
+        android:textColor="@android:color/black"
+         android:text="你好还好"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/slidingmenu_item_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-4dp"
+        android:layout_alignBottom="@id/slidingmenu_item_pic"
+     android:text="你好还好"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/slidingmenu_item_pic"
+        android:textColor="#B5B5B5"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="230dp"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="#ADADAD" />
+
+</RelativeLayout>

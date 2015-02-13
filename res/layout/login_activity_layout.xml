@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage_background" >
+
+    <LinearLayout
+        android:id="@+id/login_linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_register_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_linearlayout1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loginpage_admin" />
+
+        <EditText
+            android:id="@+id/login_adminedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/login_page_editback"
+            android:hint="手机号/邮箱"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_linearlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_linearlayout2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loginpage_password" />
+
+        <EditText
+            android:id="@+id/login_passEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/login_page_editback"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/login_linearlayout3"
+        android:layout_alignRight="@id/login_linearlayout3"
+        android:layout_below="@id/login_linearlayout3"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/loginpage_loginbutton"
+        android:onClick="loginIn"
+        android:text="登  录"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/login_toregister_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/login_button"
+        android:layout_below="@id/login_button"
+        android:layout_marginTop="25dp"
+        android:text="注册账号"
+        android:textColor="#6E6E6E"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/login_tofindpassword_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/login_button"
+        android:layout_below="@id/login_button"
+        android:layout_marginTop="25dp"
+        android:text="忘记密码"
+        android:textColor="#6E6E6E"
+        android:textSize="15sp" />
+
+</RelativeLayout>
